@@ -142,7 +142,7 @@ El clustering ordena físicamente los datos dentro de cada partición. Cuando un
   
   Función del Pipeline de Ventas:
     ```bash
-    gcloud functions deploy procesador-ventas-csv --runtime=python311 --region=us-central1 --source=. --entry-point=carga_csv_desde_pubsub --trigger-topic=bucket-uploads-topic --no-gen2
+    gcloud functions deploy procesador-ventas-csv --runtime=python311 --region=us-central1 --source=. --entry-point=procesa_csv_ventas --trigger-topic=bucket-uploads-topic --no-gen2
     ```
   Función del Pipeline de Eventos:
     ```bash
